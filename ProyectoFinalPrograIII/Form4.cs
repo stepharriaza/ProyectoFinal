@@ -21,6 +21,8 @@ namespace ProyectoFinalPrograIII
         {
             Cliente nuevoCliente = new Cliente();
             nuevoCliente.setName(txtbNombre.Text);
+            nuevoCliente.setCorreo(txtbCorreo.Text);
+            nuevoCliente.setTelefono(txtbTelefono.Text);
 
             Nodo nuevoNodo = new Nodo(nuevoCliente);
 

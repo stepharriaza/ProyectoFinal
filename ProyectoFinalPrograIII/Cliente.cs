@@ -9,6 +9,8 @@ namespace ProyectoFinalPrograIII
     public class Cliente
     {
         private String name;
+        private String correo;
+        private String telefono;
         public void setName(String name)
         {
             this.name = name;
@@ -16,6 +18,22 @@ namespace ProyectoFinalPrograIII
         public String getName()
         {
             return this.name;
+        }
+        public void setCorreo(String correo)
+        {
+            this.correo = correo;
+        }
+        public String getCorreo()
+        {
+            return this.correo;
+        }
+        public void setTelefono(String telefono)
+        {
+            this.telefono = telefono;
+        }
+        public String getTelefono()
+        {
+            return this.telefono;
         }
     }
 }

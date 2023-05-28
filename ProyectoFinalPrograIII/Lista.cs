@@ -90,7 +90,7 @@ namespace ProyectoFinalPrograIII
             {
                 Cliente cliente = actual.getCliente();
 
-                message += cliente.getName() + "\n";
+                message += "Nombre cliente:\t" + cliente.getName() +"\nCorreo electronico:\t"+ cliente.getCorreo() + " \nNumero de telefono:\t"+ cliente.getTelefono() + "\n\n";
 
                 //foreach (Curso course in cliente.getCursos())
                 //{

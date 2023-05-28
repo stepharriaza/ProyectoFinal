@@ -30,7 +30,7 @@
         {
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtbTelefono = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtbCorreo = new System.Windows.Forms.TextBox();
             this.txtbNombre = new System.Windows.Forms.TextBox();
@@ -60,12 +60,12 @@
             this.label4.TabIndex = 37;
             this.label4.Text = "Registro Clientes";
             // 
-            // textBox3
+            // txtbTelefono
             // 
-            this.textBox3.Location = new System.Drawing.Point(164, 237);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(431, 27);
-            this.textBox3.TabIndex = 35;
+            this.txtbTelefono.Location = new System.Drawing.Point(164, 237);
+            this.txtbTelefono.Name = "txtbTelefono";
+            this.txtbTelefono.Size = new System.Drawing.Size(431, 27);
+            this.txtbTelefono.TabIndex = 35;
             // 
             // label3
             // 
@@ -133,7 +133,7 @@
             this.Controls.Add(this.chkbClienteVip);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtbTelefono);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtbCorreo);
             this.Controls.Add(this.txtbNombre);
@@ -151,7 +151,7 @@
 
         private Button btnRegistrar;
         private Label label4;
-        private TextBox textBox3;
+        private TextBox txtbTelefono;
         private Label label3;
         private TextBox txtbCorreo;
         private TextBox txtbNombre;
