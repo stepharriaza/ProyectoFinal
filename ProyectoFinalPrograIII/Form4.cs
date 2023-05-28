@@ -20,13 +20,44 @@ namespace ProyectoFinalPrograIII
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
             Cliente nuevoCliente = new Cliente();
-            nuevoCliente.setName(txtbNombre.Text);
-            nuevoCliente.setCorreo(txtbCorreo.Text);
-            nuevoCliente.setTelefono(txtbTelefono.Text);
+            
 
-            Nodo nuevoNodo = new Nodo(nuevoCliente);
+            bool verificado = true;
+            if (txtbNombre.Text == "")
+            {
+                lblErrorNombre.Visible = true;
+                verificado = false;
+            }
+            if (txtbCorreo.Text == "")
+            {
+                lblErrorCorreo.Visible = true;
+                verificado = false;
+            }
+            if (txtbTelefono.Text == "") 
+            {
+                lblErrorTelefono.Visible = true;
+                verificado = false;
+            }
+            if (verificado)
+            {
+                lblErrorNombre.Visible = false;
+                lblErrorCorreo.Visible = false;
+                lblErrorTelefono.Visible = false;
+                nuevoCliente.setName(txtbNombre.Text);
+                nuevoCliente.setCorreo(txtbCorreo.Text);
+                nuevoCliente.setTelefono(txtbTelefono.Text);
 
-            Form1.instance.getlistaClientes().Insertar(nuevoNodo);
+                Nodo nuevoNodo = new Nodo(nuevoCliente);
+
+                Form1.instance.getlistaClientes().Insertar(nuevoNodo);
+
+                txtbNombre.Text = "";
+                txtbCorreo.Text = "";
+                txtbTelefono.Text = "";
+
+            }
         }
+
+        
     }
 }
