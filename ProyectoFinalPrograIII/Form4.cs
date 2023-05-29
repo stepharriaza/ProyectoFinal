@@ -20,13 +20,17 @@ namespace ProyectoFinalPrograIII
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
             Cliente nuevoCliente = new Cliente();
-            
+
+            lblErrorNombre.Visible = false;
+            lblErrorCorreo.Visible = false;
+            lblErrorTelefono.Visible = false;
 
             bool verificado = true;
             if (txtbNombre.Text == "")
             {
                 lblErrorNombre.Visible = true;
                 verificado = false;
+
             }
             if (txtbCorreo.Text == "")
             {

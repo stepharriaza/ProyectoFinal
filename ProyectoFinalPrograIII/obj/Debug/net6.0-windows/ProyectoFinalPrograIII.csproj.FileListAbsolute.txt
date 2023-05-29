@@ -19,4 +19,3 @@ C:\Users\steph\OneDrive\Documentos\Progra\Progra III\ProyectoFinalPrograIII\Proy
 C:\Users\steph\OneDrive\Documentos\Progra\Progra III\ProyectoFinalPrograIII\ProyectoFinalPrograIII\obj\Debug\net6.0-windows\ProyectoFinalPrograIII.Properties.Resources.resources
 C:\Users\steph\OneDrive\Documentos\Progra\Progra III\ProyectoFinalPrograIII\ProyectoFinalPrograIII\obj\Debug\net6.0-windows\ProyectoFinalPrograIII.Form3.resources
 C:\Users\steph\OneDrive\Documentos\Progra\Progra III\ProyectoFinalPrograIII\ProyectoFinalPrograIII\obj\Debug\net6.0-windows\ProyectoFinalPrograIII.Form4.resources
-C:\Users\steph\OneDrive\Documentos\Progra\Progra III\ProyectoFinalPrograIII\ProyectoFinalPrograIII\obj\Debug\net6.0-windows\ProyectoFinalPrograIII.Form5.resources

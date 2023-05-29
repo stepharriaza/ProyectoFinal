@@ -68,20 +68,6 @@ namespace ProyectoFinalPrograIII
 
         public string mostrarLista()
         {
-            //Nodo actual = cabeza;
-            //if (actual != null)
-            //{
-            //    do
-            //    {
-            //        Console.WriteLine(" " + actual.getCliente.getName);
-            //        actual = actual.Sig;
-            //    } while (actual != cabeza);
-            //}
-            //else
-            //{
-            //    Console.WriteLine("\n La lista se encuentra vacía \n");
-            //}
-
             String message = "";
 
             Nodo actual = this.cabeza;
@@ -91,19 +77,31 @@ namespace ProyectoFinalPrograIII
                 Cliente cliente = actual.getCliente();
 
                 message += "Nombre cliente:\t" + cliente.getName() +"\nCorreo electronico:\t"+ cliente.getCorreo() + " \nNumero de telefono:\t"+ cliente.getTelefono() + "\n\n";
-
-                //foreach (Curso course in cliente.getCursos())
-                //{
-                //    if (course != null)
-                //    {
-                //        message += "\t" + course.getName() + " - " + course.getGrade() + "\n";
-                //    }
-                //}
-
                 actual = actual.Sig;
 
             } while (actual != null && actual != cabeza);
             return message;
+        }
+
+        public bool Buscar(String buscarNombre)
+        {
+            bool exists = false;
+
+            Nodo actual = this.cabeza;
+
+            do
+            {
+                Cliente cliente = actual.getCliente();
+                if (cliente.getName() == buscarNombre)
+                {
+                    exists= true;
+                    break;
+                }
+
+                actual = actual.Sig;
+            } while (actual != null && actual != cabeza);
+
+            return exists;
         }
 
         //public void eliminar()

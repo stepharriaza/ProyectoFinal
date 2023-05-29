@@ -37,7 +37,11 @@ namespace ProyectoFinalPrograIII
 
         private void verificarClientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            string message = "";
 
+            message += listaCliente.mostrarLista();
+
+            MessageBox.Show(message);
         }
 
         private void button1_Click(object sender, EventArgs e)
