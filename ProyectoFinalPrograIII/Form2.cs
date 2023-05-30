@@ -81,11 +81,11 @@ namespace ProyectoFinalPrograIII
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
 
-            
+
 
             if (!(Form1.instance.getlistaClientes().Buscar(txtbNombre.Text)))
             {
-                
+
                 String message = "Cliente no registrado";
                 String title = "Cliente nuevo";
 
@@ -100,8 +100,47 @@ namespace ProyectoFinalPrograIII
                     cliente.Show();
                 }
             }
+            else
+            {
+                Habitaciones nuevaReservacion = new Habitaciones(numericUpDown4.Value.ToString(), decimal.ToInt32(numericUpDown1.Value), dateTimePicker1.Value.ToString(), dateTimePicker2.Value.ToString());
+                Form1.instance.getlistaClientes().addHabitaciones(txtbNombre.Text, nuevaReservacion);
+                this.Close();
+
+            }
             //Form2 registro = new Form2();
-            this.Close();
+
+        }
+
+        private void numericUpDown2_ValueChanged(object sender, EventArgs e)
+        {
+            if (decimal.ToInt32(numericUpDown2.Value) >2) {
+                MessageBox.Show("No se pueden reservar más de 2 habitaciones simples");
+            }
+            else
+            {
+                int total = (12*decimal.ToInt32(numericUpDown2.Value))+(20*decimal.ToInt32(numericUpDown3.Value));
+                lblPrecio.Text = "$" + total.ToString() + ".00";
+            }
+            if (decimal.ToInt32(numericUpDown2.Value)==2)
+            {
+                
+            }
+        }
+
+        private void numericUpDown3_ValueChanged(object sender, EventArgs e)
+        {
+            if (decimal.ToInt32(numericUpDown3.Value) >2)
+            {
+                MessageBox.Show("No se pueden reservar más de 2 habitaciones dobles");
+            }
+            else {
+                int total = (12*decimal.ToInt32(numericUpDown2.Value))+(20*decimal.ToInt32(numericUpDown3.Value));
+                lblPrecio.Text = "$" + total.ToString() + ".00";
+            }
+            if (decimal.ToInt32(numericUpDown2.Value) ==2)
+            {
+                
+            }
         }
     }
 }

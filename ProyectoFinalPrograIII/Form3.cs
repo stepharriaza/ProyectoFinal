@@ -21,5 +21,20 @@ namespace ProyectoFinalPrograIII
         {
             this.Close();
         }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+            if (numericUpDown1.Value <100)
+            {
+                lblTipoSalon.Text = "Salón Sol";
+            }
+            else if (numericUpDown1.Value > 100 &&  numericUpDown1.Value <300)
+            {
+                lblTipoSalon.Text = "Salón Luna";
+            }
+            else {
+                lblTipoSalon.Text = "La cantidad de personas supera el limite permitido";
+            }
+        }
     }
 }

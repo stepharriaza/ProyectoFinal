@@ -24,6 +24,8 @@ namespace ProyectoFinalPrograIII
             lblErrorNombre.Visible = false;
             lblErrorCorreo.Visible = false;
             lblErrorTelefono.Visible = false;
+            string telefono = txtbTelefono.Text;
+            string correo = txtbCorreo.Text;
 
             bool verificado = true;
             if (txtbNombre.Text == "")
@@ -34,11 +36,23 @@ namespace ProyectoFinalPrograIII
             }
             if (txtbCorreo.Text == "")
             {
+                lblErrorCorreo.Text = "*Ingrese nombre del cliente*";
                 lblErrorCorreo.Visible = true;
                 verificado = false;
             }
             if (txtbTelefono.Text == "") 
             {
+                lblErrorTelefono.Text = "*Ingrese el número de teléfono del cliente*";
+                lblErrorTelefono.Visible = true;
+                verificado = false;
+            }
+            if(!((correo.Contains("@"))&&(correo.Contains(".")))){
+                lblErrorCorreo.Text = "*Dirección de correo inválido*";
+                lblErrorCorreo.Visible = true;
+                verificado = false;
+            }
+            if (!(telefono.Length == 8)) {
+                lblErrorTelefono.Text = "*Numero de telefono inválido*";
                 lblErrorTelefono.Visible = true;
                 verificado = false;
             }

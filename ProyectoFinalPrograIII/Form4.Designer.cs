@@ -126,6 +126,7 @@
             this.chkbClienteVip.TabIndex = 42;
             this.chkbClienteVip.Text = "El cliente tiene cuenta con memebresia vip";
             this.chkbClienteVip.UseVisualStyleBackColor = true;
+            this.chkbClienteVip.Visible = false;
             // 
             // lblErrorNombre
             // 
@@ -183,7 +184,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form4";
+            this.Text = "Registro de Clientes";
             this.ResumeLayout(false);
             this.PerformLayout();
 

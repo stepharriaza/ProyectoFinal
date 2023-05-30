@@ -36,8 +36,8 @@
             this.reservaSalonEventosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verificarHabitacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verificarClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verificarHabitacionesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -96,7 +96,8 @@
             // verificarHabitacionesToolStripMenuItem
             // 
             this.verificarHabitacionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.verificarClientesToolStripMenuItem});
+            this.verificarClientesToolStripMenuItem,
+            this.verificarHabitacionesToolStripMenuItem1});
             this.verificarHabitacionesToolStripMenuItem.Name = "verificarHabitacionesToolStripMenuItem";
             this.verificarHabitacionesToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
             this.verificarHabitacionesToolStripMenuItem.Text = "Registros";
@@ -104,9 +105,16 @@
             // verificarClientesToolStripMenuItem
             // 
             this.verificarClientesToolStripMenuItem.Name = "verificarClientesToolStripMenuItem";
-            this.verificarClientesToolStripMenuItem.Size = new System.Drawing.Size(202, 26);
+            this.verificarClientesToolStripMenuItem.Size = new System.Drawing.Size(237, 26);
             this.verificarClientesToolStripMenuItem.Text = "Verificar Clientes";
             this.verificarClientesToolStripMenuItem.Click += new System.EventHandler(this.verificarClientesToolStripMenuItem_Click);
+            // 
+            // verificarHabitacionesToolStripMenuItem1
+            // 
+            this.verificarHabitacionesToolStripMenuItem1.Name = "verificarHabitacionesToolStripMenuItem1";
+            this.verificarHabitacionesToolStripMenuItem1.Size = new System.Drawing.Size(237, 26);
+            this.verificarHabitacionesToolStripMenuItem1.Text = "Verificar Habitaciones";
+            this.verificarHabitacionesToolStripMenuItem1.Click += new System.EventHandler(this.verificarHabitacionesToolStripMenuItem1_Click);
             // 
             // pictureBox1
             // 
@@ -117,22 +125,11 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(336, 50);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(159, 29);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Listado Clientes";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(522, 463);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.menuStrip1);
@@ -158,6 +155,6 @@
         private ToolStripMenuItem reservaHabitacionesToolStripMenuItem;
         private ToolStripMenuItem reservaSalonEventosToolStripMenuItem;
         private ToolStripMenuItem verificarClientesToolStripMenuItem;
-        private Button button1;
+        private ToolStripMenuItem verificarHabitacionesToolStripMenuItem1;
     }
 }

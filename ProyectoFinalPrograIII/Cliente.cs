@@ -11,6 +11,7 @@ namespace ProyectoFinalPrograIII
         private String name;
         private String correo;
         private String telefono;
+        private Habitaciones[] habitaciones = new Habitaciones[3];
         public void setName(String name)
         {
             this.name = name;
@@ -34,6 +35,15 @@ namespace ProyectoFinalPrograIII
         public String getTelefono()
         {
             return this.telefono;
+        }
+        public Habitaciones[] getHabitaciones()
+        {
+            return this.habitaciones;
+        }
+
+        public void setHabitaciones(Habitaciones[] habitaciones)
+        {
+            this.habitaciones = habitaciones;
         }
     }
 }

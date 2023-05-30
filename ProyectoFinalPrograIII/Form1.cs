@@ -44,11 +44,11 @@ namespace ProyectoFinalPrograIII
             MessageBox.Show(message);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void verificarHabitacionesToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             string message = "";
 
-            message += listaCliente.mostrarLista();
+            message += listaCliente.mostrarReservacion();
 
             MessageBox.Show(message);
         }
